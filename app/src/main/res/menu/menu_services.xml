@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/misdatos"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/data_user"/>
+
+    <item android:id="@+id/search_x" android:visible="false"
+        android:icon="@drawable/ic_google"
+        android:title="x"/>
+    <item android:id="@+id/rbd"
+        android:visible="false"
+        android:icon="@drawable/ic_google"
+        android:title="@string/restaurarBd"
+         />
+    <item android:id="@+id/upDataB" android:visible="false"
+        android:icon="@drawable/ic_google"
+        android:title="@string/actualizarDB"/>
+    <item android:id="@+id/close_session"
+        android:icon="@drawable/ic_baseline_logout_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/cerrar_sesion" />
+</menu>

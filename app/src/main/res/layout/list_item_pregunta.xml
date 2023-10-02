@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintPreg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchEval"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        android:text="Evaluar"
+        app:layout_constraintEnd_toStartOf="@+id/fActionBComment"
+        app:layout_constraintStart_toStartOf="@+id/txtPregunta"
+        app:layout_constraintTop_toTopOf="@+id/fActionBComment"
+        app:thumbTint="@color/switch_thumb_selector"
+        app:trackTint="@color/switch_track_selector" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fActionBComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/secondaryLightColor"
+
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/fActionBCamera"
+        app:layout_constraintEnd_toStartOf="@+id/fActionBCamera"
+        app:layout_constraintTop_toTopOf="@+id/fActionBCamera"
+        app:srcCompat="@drawable/ic_baseline_text_snippet_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fActionBCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/secondaryLightColor"
+        app:fabSize="mini"
+
+        app:layout_constraintBottom_toBottomOf="@+id/checkPregunta"
+        app:layout_constraintEnd_toStartOf="@+id/checkPregunta"
+        app:layout_constraintTop_toTopOf="@+id/checkPregunta"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/checkPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountPics"
+        app:srcCompat="@drawable/ic_chk_nok_24" />
+
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+
+        android:layout_marginEnd="32dp"
+        android:singleLine="false"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idNoPregunta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idNoPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="no."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtPregunta" />
+
+
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fActionBComment">
+        <!--        android:fillViewport="true"-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintViewContent"
+                app:layout_constraintStart_toStartOf="@+id/constraintViewContent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtCriterio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintBottom_toTopOf="@+id/txtPregunta"
+        app:layout_constraintStart_toStartOf="@+id/txtPregunta" />
+
+    <EditText
+        android:id="@+id/txtComentario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/checkPregunta"
+        app:layout_constraintStart_toStartOf="@+id/txtPregunta"
+        app:layout_constraintTop_toBottomOf="@+id/fActionBComment" />
+
+    <Button
+        android:id="@+id/buttonGuardarTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="GUARDAR"
+        app:layout_constraintEnd_toEndOf="@+id/scrollViewContent"
+        app:layout_constraintStart_toStartOf="@+id/scrollViewContent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComentario" />
+
+    <TextView
+        android:id="@+id/textCountPics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/fActionBCamera"
+        app:layout_constraintStart_toStartOf="@+id/fActionBCamera"
+        app:layout_constraintTop_toBottomOf="@+id/txtPregunta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_procesoso"
+        android:icon="@drawable/bg_rounded"
+        android:textColor="#ffffff"
+        android:title="En proceso"/>
+    <item
+        android:id="@+id/navigation_terminados"
+        android:icon="@drawable/bg_rounded"
+        android:textColor="#ffffff"
+        android:title="Enviados"/>
+
+
+</menu>

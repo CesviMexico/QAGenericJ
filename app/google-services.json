@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "509080993231",
+    "project_id": "levinfocesvi",
+    "storage_bucket": "levinfocesvi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509080993231:android:ec17a6158046bc1c93a6ba",
+        "android_client_info": {
+          "package_name": "com.cesvimexico.qagenericj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509080993231-bvkt36tgb7jvjv8raqfcusnattj2rqid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cesvimexico.qagenericj",
+            "certificate_hash": "9f8f829bb8c89369a1c76db9c9268beae0c73353"
+          }
+        },
+        {
+          "client_id": "509080993231-mhvj85qt6c1pse359kr6850b5t7333p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiMZikwUqg4PIQfc_icsIPjiZkx3Uxw-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509080993231-mhvj85qt6c1pse359kr6850b5t7333p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

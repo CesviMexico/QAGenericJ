@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">LevInfoCesvi</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="label_user">Usuario</string>
+    <string name="label_passwd">Contraseña</string>
+    <string name="label_login_google">Iniciar sesión con Google</string>
+    <string name="title_activity_main_area">CESVI México</string>
+    <string name="title_activity_main_service">Servicios</string>
+    <string name="restaurarBd">Restaurar BD</string>
+    <string name="data_user">usuario</string>
+    <string name="actualizarDB">Actualizar BD</string>
+    <string name="cerrar_sesion"> SALIR</string>
+    <string name="title_activity_data_user">Datos del usuario</string>
+    <string name="title_activity_evalua_list">EvaluaList</string>
+    <string name="add_evaluacion">Agregar</string>
+    <string name="srch_evaluacion">Buscar servicio</string>
+    <string name="title_activity_eval_form">Detalles del servicio</string>
+    <string name="continuar_evaluacion">Continuar con la evaluación</string>
+    <string name="title_activity_main_seccion">Secciones</string>
+    <string name="regresar_act">Regresar</string>
+
+    <string-array name="estados">
+        <item>Aguascalientes</item>
+        <item>Baja California</item>
+        <item>Baja California Sur</item>
+        <item>Campeche</item>
+        <item>Chiapas</item>
+        <item>Chihuahua</item>
+        <item>Coahuila</item>
+        <item>Colima</item>
+        <item>Ciudad de México</item>
+        <item>Durango</item>
+        <item>Guanajuato</item>
+        <item>Guerrero</item>
+        <item>Hidalgo</item>
+        <item>Jalisco</item>
+        <item>Estado de México</item>
+        <item>Michoacán</item>
+        <item>Morelos</item>
+        <item>Nayarit</item>
+        <item>Nuevo León</item>
+        <item>Oaxaca</item>
+        <item>Puebla</item>
+        <item>Querétaro</item>
+        <item>Quintana Roo</item>
+        <item>San Luis Potosí</item>
+        <item>Sinaloa</item>
+        <item>Sonora</item>
+        <item>Tabasco</item>
+        <item>Tamaulipas</item>
+        <item>Tlaxcala</item>
+        <item>Veracruz</item>
+        <item>Yucatán</item>
+        <item>Zacatecas</item>
+    </string-array>
+
+</resources>

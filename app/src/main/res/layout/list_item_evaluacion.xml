@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/evalua_cardLE"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/secondaryLightColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/clienteLE"
+                android:layout_width="280dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/f_iniLE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autoSizeMaxTextSize="16sp"
+
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="@+id/clienteLE"
+                app:layout_constraintStart_toEndOf="@+id/textView15LE"
+                app:layout_constraintTop_toTopOf="@+id/textView15LE" />
+
+            <TextView
+                android:id="@+id/avanceLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:padding="10dp"
+                android:text="100%"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clienteLE" />
+
+            <ImageView
+                android:id="@+id/imgFrontLE"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_photo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15LE" />
+
+            <Button
+                android:id="@+id/btn_enviarLE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="TERMINAR"
+                app:layout_constraintBottom_toTopOf="@+id/idE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgFrontLE" />
+
+            <TextView
+                android:id="@+id/textView15LE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Inicia"
+                android:textColor="@color/primaryColor"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/imgFrontLE"
+                app:layout_constraintTop_toBottomOf="@+id/clienteLE" />
+
+
+            <TextView
+                android:id="@+id/empresaLE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:paddingLeft="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView15LE"
+                app:layout_constraintTop_toBottomOf="@+id/imgFrontLE" />
+
+            <TextView
+                android:id="@+id/idE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/empresaLE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/btn_enviarLE" />
+
+            <Button
+                android:id="@+id/buttonFirmar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Firmar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgFrontLE"
+                app:layout_constraintTop_toBottomOf="@+id/f_iniLE" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="restaurarBd">Restaurar BD</string>
+    <string name="data_user">Datos del usuario</string>
+    <string name="actualizarDB">Actualizar BD</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="title_activity_data_user">Datos del usuario</string>
+    <string name="add_evaluacion">Agregar</string>
+    <string name="srch_evaluacion">Buscar servicio</string>
+    <string name="title_activity_eval_form">Detalles del servicio</string>
+    <string name="continuar_evaluacion">Continuar con la evaluación</string>
+    <string name="title_activity_main_seccion">Secciones</string>
+    <string name="regresar_act">Regresar</string>
+</resources>

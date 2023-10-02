@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintForm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+
+    <TextView
+        android:id="@+id/txtEtiquetaFR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:singleLine="false"
+        android:text="TextView"
+        android:textAlignment="textStart"
+
+        android:textColor="@color/primaryLightColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextFR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:focusableInTouchMode="true"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEtiquetaFR"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFR"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFR"
+        app:layout_constraintTop_toTopOf="@+id/txtEtiquetaFR"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spinnerFR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/gray"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="@+id/txtEtiquetaFR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFR"
+        app:layout_constraintTop_toTopOf="@+id/txtEtiquetaFR" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".35" />
+
+    <Button
+        android:id="@+id/buttonFR"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+
+        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextFR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextFR" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
